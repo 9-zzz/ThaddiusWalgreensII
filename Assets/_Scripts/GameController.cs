@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public Transform[] spawnPoints;
     public float waitTime;
     public GameObject samFaller;
+    public GameObject sam;
     public Text scoreText;
 
     void Awake()
@@ -26,7 +27,14 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (sam.gameObject != null)
+        {
+            if (sam.transform.position.y < -5.25f)
+            {
+                Destroy(sam.gameObject);
+                scoreText.text = "GAME OVER";
+            }
+        }
     }
 
     IEnumerator waitAndSpawn()

@@ -139,9 +139,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: d164a1d2a308a944580258d95c44cac5, type: 3}
     m_FontSize: 20
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -364,8 +364,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 909974524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.75, y: -4.44000006, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.0387001, y: -2.07999992, z: 0}
+  m_LocalScale: {x: 1.06078172, y: 8.94999123, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -418,8 +418,9 @@ MonoBehaviour:
   - {fileID: 781133143}
   - {fileID: 2023380130}
   - {fileID: 706459909}
-  waitTime: 1
+  waitTime: 1.5
   samFaller: {fileID: 100742, guid: 0c29b79af1f5fce45bac6516c4a1ea5b, type: 2}
+  sam: {fileID: 1524865281}
   scoreText: {fileID: 415774580}
 --- !u!1 &1524865281
 GameObject:
@@ -465,7 +466,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e61a38024aa71514e9f7864b25883236, type: 3}
-  m_Color: {r: 1, g: .889655232, b: 0, a: 1}
+  m_Color: {r: .158620834, g: 1, b: 0, a: 1}
 --- !u!4 &1524865283
 Transform:
   m_ObjectHideFlags: 0
@@ -502,11 +503,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1524865286
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -556,8 +557,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1665743357}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.75, y: -4.44000006, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -5.0387001, y: -2.07999992, z: 0}
+  m_LocalScale: {x: 1.06078172, y: 8.94999123, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -637,7 +638,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+  m_BackGroundColor: {r: .0441176295, g: .00681228237, b: .0137587925, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

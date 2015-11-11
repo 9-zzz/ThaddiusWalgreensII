@@ -9,7 +9,7 @@ public class SamFaller : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        Destroy(gameObject, 5.0f);
     }
 
     // Update is called once per frame
@@ -24,6 +24,7 @@ public class SamFaller : MonoBehaviour
         {
             GameController.S.score++;
             GameController.S.scoreText.text = "SCORE: " + GameController.S.score;
+            GameController.S.waitTime -= 0.01f;
 
             Instantiate(samDeathPSFX, transform.position, transform.rotation);
             Destroy(coll.gameObject);
