@@ -150,7 +150,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 9999
+  m_Text: 'SCORE: 0'
 --- !u!222 &415774581
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461461300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 4.5, z: 0}
+  m_LocalPosition: {x: -3, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1500355273}
@@ -206,7 +206,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 706459908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 4.5, z: 0}
+  m_LocalPosition: {x: 3, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1500355273}
@@ -323,7 +323,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781133142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 4.5, z: 0}
+  m_LocalPosition: {x: -1, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1500355273}
@@ -338,7 +338,7 @@ GameObject:
   - 4: {fileID: 909974526}
   - 61: {fileID: 909974525}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: rCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -377,6 +377,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1500355273}
+  - 114: {fileID: 1500355274}
   m_Layer: 0
   m_Name: sps
   m_TagString: Untagged
@@ -400,6 +401,26 @@ Transform:
   - {fileID: 706459909}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1500355274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1500355272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b44b01fb157de4482e469eb8929762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  spawnPoints:
+  - {fileID: 461461301}
+  - {fileID: 781133143}
+  - {fileID: 2023380130}
+  - {fileID: 706459909}
+  waitTime: 1
+  samFaller: {fileID: 100742, guid: 0c29b79af1f5fce45bac6516c4a1ea5b, type: 2}
+  scoreText: {fileID: 415774580}
 --- !u!1 &1524865281
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +465,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e61a38024aa71514e9f7864b25883236, type: 3}
-  m_Color: {r: 1, g: .463235319, b: .874137938, a: 1}
+  m_Color: {r: 1, g: .889655232, b: 0, a: 1}
 --- !u!4 &1524865283
 Transform:
   m_ObjectHideFlags: 0
@@ -481,7 +502,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -509,7 +530,7 @@ GameObject:
   - 4: {fileID: 1665743359}
   - 61: {fileID: 1665743358}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: lCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -562,7 +583,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023380129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 4.5, z: 0}
+  m_LocalPosition: {x: 1, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1500355273}

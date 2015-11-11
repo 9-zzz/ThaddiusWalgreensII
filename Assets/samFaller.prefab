@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21283366}
   - 50: {fileID: 5014844}
   - 61: {fileID: 6186570}
+  - 114: {fileID: 11422762}
   m_Layer: 0
   m_Name: samFaller
   m_TagString: Untagged
@@ -40,7 +41,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: .25
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -59,6 +60,18 @@ BoxCollider2D:
   m_Offset: {x: .00771695375, y: 0}
   serializedVersion: 2
   m_Size: {x: .745658636, y: 1.09935653}
+--- !u!114 &11422762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3874997abc4afc94e91b28aa7ac2af17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  samDeathPSFX: {fileID: 174824, guid: bd7ff0cc39de79846bfe982ad8a51ea4, type: 2}
 --- !u!212 &21283366
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -84,14 +97,34 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e61a38024aa71514e9f7864b25883236, type: 3}
-  m_Color: {r: .45588237, g: .819878221, b: 1, a: 1}
+  m_Color: {r: 1, g: .411764681, b: .716024101, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.g
+      value: .411764681
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Color.b
+      value: .716024101
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_GravityScale
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: samDeathPSFX
+      value: 
+      objectReference: {fileID: 174824, guid: bd7ff0cc39de79846bfe982ad8a51ea4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100742}
